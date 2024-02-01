@@ -1,0 +1,11 @@
+body{
+    background-color: skyblue;
+    text-align: center;
+}
+
+.mytable,.mytable td,.mytable th
+{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}

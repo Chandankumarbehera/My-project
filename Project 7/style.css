@@ -1,0 +1,49 @@
+body{
+    background-color:rgb(251, 255, 255);
+    color:black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    font-size: 20px;
+    padding:15px;
+}
+.box{
+    border:2px solid black;
+}
+input{
+    border: 0;
+    outline: none;
+}
+button{
+    border: 0;
+    
+}
+.nav a,.nav img{
+    margin-right: 10px;
+}
+.logoContainer img{
+    margin-right:20px ;
+}
+button:active{
+    background-color: white;
+}
+.hii .templeSection{
+    float:right;
+    width: 200px;
+    border: 1px solid black;
+    /* height: 500px; */
+}
+.about{
+    font-weight: bold;
+    /* margin-right: 20px; */
+
+}
+.space{
+    margin-bottom:6px;
+    padding:4px;
+    display: flex;
+    justify-content: space-around;
+}
