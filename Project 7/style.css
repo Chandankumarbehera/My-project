@@ -1,7 +1,20 @@
+/* *{
+    color:white;
+} */
+
+
+
 body{
     background-color:rgb(251, 255, 255);
     color:black;
-   
+    margin-top: 0;
+    /* background-image: url(jagannath2.jpeg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+    width: 100%;
+    /* background-size: cover;
+    background-position: 7px; */
 }
 header{
     display: flex;
@@ -16,6 +29,7 @@ header{
 }
 .box{
     border:2px solid black;
+    background-color: aqua;
 }
 input{
     border: 0;
@@ -39,7 +53,7 @@ button:active{
     float:right;
     width: 250px;
     border: 2px solid black;
-    background-color: rgb(198, 255, 255);
+    background-color:aqua;
     /* height: 500px; */
 }
 .about{
@@ -52,12 +66,13 @@ button:active{
     padding:4px;
     display: flex;
     justify-content: space-around;
+   
 }
 .puri,
 .chardham{
     float:right;
-    border: 2px solid black;
-    background-color:  rgb(198, 255, 255);
+    border: 1px solid black;
+    background-color:aqua;
     
 
 }
@@ -68,9 +83,79 @@ section{
 .omm,
 .one{
     float: right;
-    border: 2px solid black;
-    background-color:   rgb(198, 255, 255);
+    border: 1px solid black;
+    background-color: aqua;
 }
+
+.five{
+    border: 2px solid black;
+}
+
+.three{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.Vaishnavism
+{
+    float: right;
+    border: 1px solid black;
+    width:300px;
+   
+    
+}
+
+
+.sponsersContainer {
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    /* padding-left: 400px; */
+    justify-content: center;
+}
+.inner{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inner>p{
+    margin-top: -20px;
+}
+
+.sponsersContainer img{
+    padding:30px;
+    height:50px;
+    width:50px;
+    /* border:1px solid black; */
+}
+
+.ten{
+    margin-right: 20px;
+}
+
+.rath,
+.yatra{
+    float: right;
+    border: 2px solid black;
+    width: 300px;
+    background-color:aqua
+}
+
+.jagannath{
+    float:right;
+    border:2px solid black;
+    width:300px;
+    background-color:aqua;
+   
+}
+
+.top,
+.history{
+    float:left;
+    border:2px solid black;
+}
+
 
 
 

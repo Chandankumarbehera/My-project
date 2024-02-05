@@ -1,0 +1,52 @@
+*{
+    font-family: arial;
+    /* border:border-box; */
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+   
+}
+.navbar{
+    height:70px;
+    background-color:#0f1111 ;
+    color:white;
+    display: flex;
+    
+}
+
+.nav-logo{
+    height:80px;
+    width:140px;
+}
+
+.logo{
+    background-image:url(img2.png);
+    background-size:cover;
+    height:60px;
+    width:130px;
+    display: flex;
+}
+
+.boder{
+    border:2px solid transparent;
+}
+
+.boder:hover{
+    border:2px solid white;
+    height: 60px;
+    width: 130px;
+}
+
+/** box2 **/
+
+.add-first{
+    color: #d8d8d8;
+    font-size:1 ram;
+}
+
+.add-sec{
+    font-size:1 ram;
+}
+
