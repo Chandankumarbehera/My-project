@@ -15,9 +15,66 @@
     
 
 }
+a{
+    text-decoration: none;
+    background-color: rgb(248, 191, 106);
+}
 
 .hover:hover{
     border:2px solid white;
     
 }
 
+.two{
+    height: 50px;
+    background-color: rgb(24, 30, 77);
+    display: flex;
+    color: white;
+    align-items: center;
+    
+}
+
+.hover-one:hover{
+    border: 2px solid white;
+}
+
+.three{
+   height: 540px;
+   background-image: url(img4.jpg);
+  background-size: cover;
+  
+    
+}
+.ajay{
+    display: flex;
+}
+.hover-three{
+   height: 400px;
+   background-color: aliceblue;
+   width: 310px;
+   margin-left: 20px;
+   border-radius: 10px;
+  
+}
+.small{
+    width:50px;
+    text-align: center;
+    /* padding:10px */
+}
+.row{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-left: 30px;
+}
+.card-img{
+    width: 110px;
+}
+.small span{
+    font-size: 12px;
+}
+.xy{
+    color: #007185;
+    background-color: aliceblue;
+    padding-top: 15px;
+    font-size: 13px;
+}

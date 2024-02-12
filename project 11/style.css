@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 80px;
+    background:white;
+    color:black;
+    display: flex;
+    padding:4px 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: f;
+}
+.header img{
+    margin-right:40px;
+}
+.header span{
+    margin-right: 40px;
+}
+
+.heading{
+    height:60px;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+.heading-two{
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+}
+section.section-img{
+    width: 100%;
+    height: 100px;
+    
+    
+}
+
+section.section-one{
+    width: 100%;
+    /* height: 30px; */
+
+}
+.bike{
+    width: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.hover:hover{
+    transform: scale(1.6);
+    color: rgb(247, 239, 4);
+}
+
+.bmw-bike{
+    margin:100px;
+    font-size:40px;
+    height: 120px;
+
+}
+
+.font{
+    font-size: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    grid-gap:40px;
+    text-align: justify;
+
+}
+
+.photo{
+    padding-top: 1700px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.race{
+    padding-left: 40px;
+}
+.photo img:hover{
+    transform: scale(1.2);
+}
+
+
+.flag{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.eng{
+   margin:40px 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly
+
+    
+}
+
+.eng-one:hover{
+    padding-left: 45px;
+    transform: scale(1.1);
+}
+
+.eng-two{
+    margin: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.jai{
+    overflow: hidden;
+}
+
+
+.grid-one{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap:40px;
+    text-align: justify;
+    margin: 40px ;
+    font-size: 20px;
+}
+
+.big-one{
+    font-size: 30px;
+    margin: 100px 40px;
+}
+
+.big{
+    font-size: 40px;
+    margin: 70px 40px;
+}
+
+.grid-two{
+    display: flex;
+    grid-template-columns: 6fr 6fr;
+    grid-gap:40px;
+    text-align: justify;
+    margin: 40px;
+    font-size: 20px;
+}
+.grid-two img{
+    height:"320px"; width:"650px";
+}
+
+.red-bmw {
+    height: 990px;
+    width: 100%;
+    background-image: url(./img/red.bmw2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.2);
+    margin:200px 0;
+    width: 1380px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.red-one{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.red-two{
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    margin: 0px 280px;
+    margin-bottom: 100px;
+
+}
+
+.bike-race{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap:40px;
+    text-align: justify;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.bike-race-one{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.raceing{
+    display: grid;
+    grid-template-columns:6fr 6fr ;
+    grid-gap:40px;
+    text-align: justify;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.raceing-one{
+    font-size: 30px;
+    margin-left: 800px;
+}
+footer a{
+    color:rgb(255, 230, 0)
+    
+}
+footer{
+    display: grid;
+    grid-template-columns:6fr 6fr;
+    text-align: center;
+    background-color:black;
+    font-size: 20px;
+    margin: 50px 100px;
+}
+
+.last{
+    background-color:white;
+    display:flex;
+    justify-content: space-between;
+    margin: 0px 500px 40px;
+}
+.name{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.white-two{
+    margin: 100px;
+}
+
+.white-bmw{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 50px;
+    grid-gap:60px;
+    text-align: justify;
+}
+
+
+
+ 
+
+
+
