@@ -16,7 +16,7 @@ function incr()
         }
     }
     else{
-        alert("You have reached the minimum of 20")
+        alert("You have reached the maximum of 20")
     }
 }
 
