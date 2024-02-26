@@ -4,14 +4,10 @@
     --secondary:#fb06ef;
     --white:#08f4ec;
 }
-
-
 body
 {
  box-sizing: border-box;
  scroll-behavior: smooth;
- 
- 
 }
 
 
@@ -56,16 +52,6 @@ header{
     top: 0px;
     z-index: 100;
 }
-
-
-#submenu{
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    justify-content: left;
-    background-color: var(--primary);
-}
-
 
 h2 span{
     color: var(--secondary);
