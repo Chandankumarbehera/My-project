@@ -27,18 +27,37 @@ products.forEach(function(product){
     card.style.cssText ="border-radius:20px ; background-color:white;margin-bottom:30px;padding:10px;";
     let image = document.createElement("img");
     image.src = product.image;
+    image.title = product.title;
+    image.value=product.price;
     image.style.cssText = "height:400px;width:300px;";
+    // puuting imagaes with id
+    image.id=product.id
+    image.addEventListener("click",(e)=>{
+        console.log(e.target.src)
+        document.write(`
+         <div style="display:flex; margin:150px;gap:50px;align-items:center">
+            <div>
+                <img src="${e.target.src}" height="400" width="300"/>
+            </div>
+            <div>
+            <h1> ${e.target.title} </h1>
+            <h3>Price - $ ${e.target.value}</h3>
+            <button> Buy Now </button>
+            </div>
+        </div>
+        `)
+    })
     card.appendChild(image);
     let p= document.createElement("p");
     p.style.cssText ="text-align : center;"
     p.innerText = product.title;
     card.appendChild(p);
     let price=document.createElement("div");
-    price.innerText=`price is - ${product.price}`;
+    price.innerText=`price is -$ ${product.price}`;
     price.style.cssText ="text-align : center;"
     card.appendChild(price);
     let btn = document.createElement("button");
-    btn.innerText="Buy Now";
+    btn.innerText="Add To Cart";
     let count = document.getElementById("count")
     let counts = 0;
     btn.onclick = ()=>{
@@ -48,4 +67,5 @@ products.forEach(function(product){
     card.appendChild(btn);
     section.appendChild(card);
 })
+
 
