@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand" href="#!">
+          <img
+            src="../assests/logo.jpeg"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-top me-2"
+          />
+        </a>
+        <!-- Toggler button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar items -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About</a>
+            </li>
+            <!-- Shop dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownShop"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownShop"
+              >
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Popular Items</a></li>
+                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+              </ul>
+            </li>
+            <!-- Cart icon -->
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount" class="badge bg-primary"></span>
+              </a>
+            </li>
+            <!-- User login and registration dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownUser"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="far fa-user"></i>
+                <span id="userEmail" class="ms-1"></span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownUser"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      Product id :
+      <p id="productId"></p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        console.log(id);
+        document.getElementById("productId").textContent = id;
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userData = JSON.parse(localStorage.getItem("loggedInUser"));
+        const userEmailElement = document.getElementById("userEmail");
+        if (userData) {
+          userEmailElement.textContent = userData.email;
+        } else {
+          window.location.replace("login.html");
+        }
+
+        const logoutLink = document.querySelector(
+          "#navbarDropdownUser .dropdown-item"
+        );
+        logoutLink.addEventListener("click", function () {
+          localStorage.removeItem("loggedInUser");
+          window.location.replace("login.html");
+        });
+      });
+    </script>
+  </body>
+</html>

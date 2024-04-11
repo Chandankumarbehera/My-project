@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard</h1>
+    <div id="userInfo"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userData = JSON.parse(localStorage.getItem("loggedInUser"));
+        if (userData) {
+          const userInfoDiv = document.getElementById("userInfo");
+          userInfoDiv.innerHTML = "<p>Email: ${userData.email}</p>"
+                    "<p>User ID: ${userData.uid}</p>";
+        } else {
+          // If no user data found, redirect to login page
+          window.location.replace("login.html");
+        }
+      });
+    </script>
+  </body>
+</html>
